@@ -37,6 +37,13 @@ public class Main {
             System.out.println("В " + i + " месяце будет накоплено " + totalMonth + " рублей");
         }
 
+        int saving = 29000;
+        int totalMonth2 = 0;
+        for (int i = 1; i <= 12; i = i + 1) {
+            totalMonth2 = (int) ((saving + totalMonth2) + (saving + totalMonth2) * 0.01);
+            System.out.println("Месяц " + i + " , сумма накоплений равна " + totalMonth2 + " рублей");
+        }
+
 
         for (int i = 1; i <= 10; i = i + 1) {
             System.out.println(2 + "*" + i + "=" + (i * 2));
